@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Chip} from 'primeng/chip';
-import {CarouselOngsComponent} from '../../components/carousel-brands/carousel-ongs.component';
+import {CarouselOngsComponent} from '../../components/carousel-ongs/carousel-ongs.component';
 
 @Component({
   selector: 'app-functionalities-page',

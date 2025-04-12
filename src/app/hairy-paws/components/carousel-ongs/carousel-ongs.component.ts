@@ -4,7 +4,7 @@ import {PrimeTemplate} from 'primeng/api';
 import {NgForOf} from '@angular/common';
 
 @Component({
-  selector: 'app-carousel-brands',
+  selector: 'app-carousel-ongs',
   imports: [
     NgForOf
   ],

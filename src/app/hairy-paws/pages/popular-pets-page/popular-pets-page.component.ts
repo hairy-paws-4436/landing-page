@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CarouselOngsComponent} from '../../components/carousel-brands/carousel-ongs.component';
+import {CarouselOngsComponent} from '../../components/carousel-ongs/carousel-ongs.component';
 import {Chip} from 'primeng/chip';
 import {Button, ButtonDirective, ButtonLabel} from 'primeng/button';
 import {Ripple} from 'primeng/ripple';
