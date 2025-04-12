@@ -1,0 +1,53 @@
+<div class="surface-overlay p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 text-center" style="background-color: rgba(21, 114, 211, 0.1);">
+  <div class="mb-3 font-bold font-medium text-orange-500">
+    <p-chip class="px-5 text-orange-500" label="TESTIMONIALS"
+            [style]="{ backgroundColor: 'rgba(255, 159, 64, 0.15)' }">
+    </p-chip>
+  </div>
+  <div class="mb-3 font-bold text-5xl mb-6">
+    <span class="text-900">What people say about us?</span>
+  </div>
+  <div class="testimonial-slider-container">
+    <div class="testimonial-slider">
+      <!-- First set of testimonials -->
+      <ng-container *ngFor="let testimonial of testimonials">
+        <div class="testimonial-card">
+          <img [src]="testimonial.image" alt="Customer Image" class="testimonial-image">
+          <div class="testimonial-content">
+            <div class="rating-container">
+              <div class="rating-value">{{testimonial.ratingText}}</div>
+              <div class="star-container">
+                <span class="star" *ngFor="let star of [1,2,3,4,5]">★</span>
+              </div>
+            </div>
+            <div class="testimonial-text">{{testimonial.comment}}</div>
+            <div class="customer-info">
+              <div class="customer-name">{{testimonial.name}}</div>
+              <div class="customer-location">{{testimonial.location}}</div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+      <!-- Duplicated testimonials for seamless loop -->
+      <ng-container *ngFor="let testimonial of testimonials">
+        <div class="testimonial-card">
+          <img [src]="testimonial.image" alt="Customer Image" class="testimonial-image">
+          <div class="testimonial-content">
+            <div class="rating-container">
+              <div class="rating-value">{{testimonial.ratingText}}</div>
+              <div class="star-container">
+                <span class="star" *ngFor="let star of [1,2,3,4,5]">★</span>
+              </div>
+            </div>
+            <div class="testimonial-text">{{testimonial.comment}}</div>
+            <div class="customer-info">
+              <div class="customer-name">{{testimonial.name}}</div>
+              <div class="customer-location">{{testimonial.location}}</div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

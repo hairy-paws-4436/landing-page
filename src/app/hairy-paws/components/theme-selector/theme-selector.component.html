@@ -1,0 +1,13 @@
+<div class="card flex justify-center">
+  <form [formGroup]="formGroup">
+    <p-selectbutton
+      [options]="stateOptions"
+      formControlName="theme"
+      optionValue="value"
+      [allowEmpty]="false">
+      <ng-template let-option pTemplate="item">
+        <i [class]="option.icon"></i>
+      </ng-template>
+    </p-selectbutton>
+  </form>
+</div>
