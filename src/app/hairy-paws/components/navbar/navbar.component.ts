@@ -3,6 +3,7 @@ import {Ripple} from "primeng/ripple";
 import {StyleClass} from "primeng/styleclass";
 import {ButtonDirective} from 'primeng/button';
 import {ThemeSelectorComponent} from '../theme-selector/theme-selector.component';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',

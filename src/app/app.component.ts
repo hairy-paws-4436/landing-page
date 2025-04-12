@@ -12,6 +12,7 @@ import {DownloadPageComponent} from './hairy-paws/pages/download-page/download-p
 import {PopularPetsPageComponent} from './hairy-paws/pages/popular-pets-page/popular-pets-page.component';
 import {BenefitsPageComponent} from './hairy-paws/pages/benefits-page/benefits-page.component';
 import {TestimonialsPageComponent} from './hairy-paws/pages/testimonials-page/testimonials-page.component';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
